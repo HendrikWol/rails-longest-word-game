@@ -1,0 +1,14 @@
+<h1>******** Now your result ********</h1>
+
+<p>You inserted the following word:</p>
+<p><strong><%= params[:attempt] %></strong></p>
+
+<p>Time taken to answer: <%= @result[:time] %>sec</p>
+<p>Your score: <%= @result[:score] %></p>
+<p>Message: <%= @result[:message] %></p>
+
+<p>*****************************************************</p>
+
+<br>
+<br>
+<%= link_to 'Play again', game_path %>
